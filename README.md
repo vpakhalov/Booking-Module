@@ -15,8 +15,9 @@
 
 1. `composer install`
 2. Создать `.env` файл на основе .env.example и указать доступы к базе данных (я использовал sqlite)
-3. `php artisan migrate:fresh --seed`
-4. `php artisan serve`.
+3. Если через SQLite: cоздать пустой файл с именем `database.sqlite` в папке `database`
+4. `php artisan migrate:fresh --seed`
+5. `php artisan serve`.
 
 ## Эндпоинты для проверки
 
