@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('capacity');
-            $table->decimal('price_per_night', 8, 2);
+            $table->unsignedInteger('price_per_night');
             $table->timestamps();
         });
     }
