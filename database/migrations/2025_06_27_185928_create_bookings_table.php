@@ -21,6 +21,9 @@ return new class extends Migration
             $table->date('end_date');
             $table->decimal('total_price', 8, 2);
             $table->timestamps();
+            
+            $table->index(['room_id', 'start_date', 'end_date']);
+            $table->index('client_id');
         });
     }
 
